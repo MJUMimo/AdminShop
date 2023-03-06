@@ -83,9 +83,9 @@ export default {
         .then((dataUser) => {
           localStorage.setItem("uidUser", dataUser.user.uid);
           if (this.$store.state.count > 0) {
-            router.push("/cart");
+            router.push("/Home");
           } else {
-            router.push("/products");
+            router.push("/Myproducts");
           }
         })
         .catch(() => {
