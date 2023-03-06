@@ -83,7 +83,7 @@ export default {
         .then((dataUser) => {
           localStorage.setItem("uidUser", dataUser.user.uid);
           if (this.$store.state.count > 0) {
-            router.push("/Home");
+            router.push("/");
           } else {
             router.push("/Myproducts");
           }
